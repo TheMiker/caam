@@ -1,23 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import collage from './collage.jpg';
 import './App.css';
+import Navbar from './Navbar.js'
+import Typography from '@material-ui/core/Typography';
+
+const topicStyle = {
+  paddingRight:'10em',
+  paddingLeft:'10em',
+};
 
 function App() {
+  var text = require('./text.json');
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={collage} className="App-logo" alt="logo" />
+        <div style={{padding: '1em'}}/>
+        <Typography variant="body1" style={topicStyle}>{text.topicDescription}</Typography>
       </header>
     </div>
   );
