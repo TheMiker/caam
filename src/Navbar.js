@@ -8,6 +8,7 @@ import HeaderZero from './HeaderZero.js'
 import HeaderOne from './HeaderOne.js'
 import HeaderTwo from './HeaderTwo.js'
 import HeaderThree from './HeaderThree.js'
+import HeaderFour from './HeaderFour.js'
 
 const navTitleStyle = {
     marginRight: '22%', 
@@ -38,6 +39,10 @@ function helperThree(){
     setGroup("GP 3");
     props.setter(<HeaderThree/>)
 }
+function helperFour(){
+    setGroup("GP 4");
+    props.setter(<HeaderFour/>)
+}
 
   return (
       <AppBar position="fixed" style={{backgroundColor: 'white'}}>
@@ -47,6 +52,7 @@ function helperThree(){
                 <Button onClick={()=> helperOne()}>GP 1</Button>
                 <Button onClick={()=> helperTwo()}>GP 2</Button>
                 <Button onClick={()=> helperThree()}>GP 3</Button>
+                <Button onClick={()=> helperFour()}>GP 4</Button>
             </ButtonGroup>
             <Typography variant="h6" style={navTitleStyle}>{group}</Typography>
         </Toolbar>
