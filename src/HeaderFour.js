@@ -1,5 +1,5 @@
 import React from 'react';
-import headerImage from './headerThree.jpg';
+import headerImage from './headerFour.jpg';
 import './App.css';
 import Typography from '@material-ui/core/Typography';
 
